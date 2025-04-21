@@ -14,7 +14,7 @@ const connectDB = async () => {
 		});
 
 		// Connect to MongoDB using the URI from environment variables
-		await mongoose.connect(process.env.MONGODB_URI_LOCAL); // No need for extra options
+		await mongoose.connect(process.env.MONGODB_URI_DEV); // No need for extra options
 	} catch (error) {
 		// Log error and exit process if connection fails
 		console.error('❌ Error connecting to MongoDB:', error);
