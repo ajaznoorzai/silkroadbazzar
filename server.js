@@ -45,7 +45,7 @@ app.use(express.json());
 
 // Defining CORS options to allow requests from specific origins and allow credentials
 const corsOptions = {
-	origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://silkroadbazzar-frontend.onrender.com', 'https://silkroadbazzar-frontend-admin.onrender.com'], // ✅ no trailing slashes
+	origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://silkroadbazzar-frontend.onrender.com', 'https://silkroadbazzar-frontend-admin.onrender.com', 'https://www.silkroadbazzar.com'], // ✅ no trailing slashes
 
 	optionsSuccessStatus: 200,
 	credentials: true, // Add this line to allow credentials
