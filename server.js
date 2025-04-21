@@ -23,7 +23,7 @@ import productRouter from './routes/productRoute.js';
 import cartRouter from './routes/cartRoute.js';
 
 // Importing the order router
-import orderRouter from './routes/orderRoute.js';
+// import orderRouter from './routes/orderRoute.js';
 
 // Importing the address router
 import addressRouter from './routes/addressRoute.js';
@@ -46,6 +46,7 @@ app.use(express.json());
 // Defining CORS options to allow requests from specific origins and allow credentials
 const corsOptions = {
 	origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'], // ✅ no trailing slashes
+
 	optionsSuccessStatus: 200,
 	credentials: true, // Add this line to allow credentials
 };
@@ -60,7 +61,7 @@ app.options('*', cors());
 app.use('/api/user', userRouter);
 app.use('/api/product', productRouter);
 app.use('/api/cart', cartRouter);
-app.use('/api/order', orderRouter);
+// app.use('/api/order', orderRouter);
 app.use('/api/address', addressRouter);
 
 // Defining a simple route to check if the API is working
